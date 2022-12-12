@@ -3,7 +3,7 @@ Recharge-Application-with user authentication
 
 Admin user :- vinaykushwaha@gloify.com Admin password :- 7879519773
 
-At first clone this project- Install this module :- pip install virtualenv Then create virtual env. in which directory your project is cloned usig this command :- virtualenv env_name Then activate your virtual env after your dir :- .\env_name\Scripts\activate. Then go to project folder and run this command :- pip install -r requirements.txt.
+At first clone this project- Install this module :- pip install virtualenv Then create virtualenv in which directory your project is cloned usig this command :- virtualenv env_name Then activate your virtual env after your dir :- .\env_name\Scripts\activate. Then go to project folder and run this command :- pip install -r requirements.txt.
 
 Then run this command to run the project :- python manage.py runserver
 
