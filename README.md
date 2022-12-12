@@ -19,9 +19,11 @@ mobile -> valid 10 digit of mobile no.
 
 valid operator -> Airtel Prepaid, BSNL Prepaid, Jio Prepaid, VI Prepaid, same as it is formate.
 
-valid area/circle -> Andhra Pradesh & Telangana, Assam , Bihar & Jharkhand, others mention in model.
+valid area/circle -> Andhra Pradesh & Telangana ,Assam ,Bihar & Jharkhand ,Chennai ,Delhi & NCR ,Gujrat ,Haryana ,Himanchal Pradesh ,
+Jammu & Kashmir ,Karnataka ,Kerala ,Kolkata ,Madhya Pradesh & Chhattisgarh ,Maharashtra & Goa ,Mumbai ,North East ,Odisha ,Punjab ,
+Rajasthan ,Tamil Nadu ,Uttar Pradesh East Uttar Pradesh West & Uttarakhand ,West Bengalmention in model.
 
-valid plan -> 499, 3359, 1799, 839, 838, 719, 699, 666, 599, 549, 455, 449, 359, 209, 256, 479, 299, 155, 179, 99, 239
+# valid plan -> 119, 149, 179, 199, 209, 239, 249, 259, 296, 299, 479, 666, 719, 749, 419, 201, 555, 15, 25, 61, 121, 181, 241, 222, 2879, 2545, 75, 91, 125, 152, 186, 86
 
 plans are indicate what is the price of your paln.
 
