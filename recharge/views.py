@@ -68,7 +68,6 @@ class RechargeView(APIView):
         plan = request.data.get('plan')
         operator = request.data.get('operator')
         circle = request.data.get("circle")
-
       
         try:
             plan_obj = Plan.objects.get(price = plan)
@@ -82,7 +81,7 @@ class RechargeView(APIView):
             operator_obj = ""
         
         try:
-            circle_obj = AreaCircle.objects.get(area_name = circle)
+            circle_obj = AreaCircle.objects.get(area_name=circle)
         except Exception as e:
             circle_obj = ""
             
