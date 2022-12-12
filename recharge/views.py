@@ -4,7 +4,6 @@ from recharge.models import *
 from recharge.serializers import *
 from rest_framework.views import APIView
 from rest_framework import status
-from django.http import Http404
 from django.contrib.auth import authenticate
 from rest_framework_simplejwt.tokens import RefreshToken
 from rest_framework.permissions import IsAuthenticated
@@ -75,7 +74,7 @@ class RechargeView(APIView):
             plan_obj = Plan.objects.get(price = plan)
         except Exception as e:
             print(e)
-            plan_obj = " "
+            plan_obj = ""
        
         try:
             operator_obj = Operator.objects.get(operator_name=operator)
@@ -85,7 +84,7 @@ class RechargeView(APIView):
         try:
             circle_obj = AreaCircle.objects.get(area_name = circle)
         except Exception as e:
-            circle_obj = " "
+            circle_obj = ""
             
         if mobile :
             recharge_obj = Recharge.objects.create(plan = plan_obj,mobile=mobile,operator=operator_obj,circle=circle_obj,user=user)

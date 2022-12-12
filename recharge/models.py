@@ -3,8 +3,9 @@ from django.core.exceptions import ValidationError
 import re
 from django.contrib.auth.models import AbstractBaseUser,PermissionsMixin
 from recharge.managers import UserManager
-
 # Create your models here.
+
+
 class User(AbstractBaseUser,PermissionsMixin):
     def validateEmail(email):
         if len(email) > 6:
