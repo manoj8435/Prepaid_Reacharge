@@ -17,7 +17,7 @@ POST http://127.0.0.1:8000/recharge/do/recharges/ responsible for do recharge as
 
 mobile -> valid 10 digit of mobile no.
 
-valid operator -> Airtel Prepaid, BSNL Prepaid, Jio Prepaid, VI Prepaid, same as it is formate.
+valid operator -> Airtel Prepaid,Jio Prepaid, BSNL Prepaid, VI Prepaid, same as it is formate.
 
 valid area/circle -> Andhra Pradesh & Telangana ,Assam ,Bihar & Jharkhand ,Chennai ,Delhi & NCR ,Gujrat ,Haryana ,Himanchal Pradesh ,
 Jammu & Kashmir ,Karnataka ,Kerala ,Kolkata ,Madhya Pradesh & Chhattisgarh ,Maharashtra & Goa ,Mumbai ,North East ,Odisha ,Punjab ,
