@@ -22,8 +22,8 @@ class CategoryPlanAdmin(admin.ModelAdmin):
 admin.site.register(CategoryPlan,CategoryPlanAdmin)
 
 class PlanAdmin(admin.ModelAdmin):
-    list_display = ['id','plan_type','price','validity','validity_type','data','data_type','description']
-    fields = ['plan_type','price','validity','validity_type','data','data_type','description']
+    list_display = ['id','plan_type','price','validity','operator','validity_type','data','data_type','description']
+    fields = ['plan_type','price','validity','operator','validity_type','data','data_type','description']
 admin.site.register(Plan,PlanAdmin)
 
 class RechareAdmin(admin.ModelAdmin):

@@ -26,6 +26,11 @@ class UserLoginSerializers(serializers.ModelSerializer):
             'email','password',
         )
 
+class OperatorSerializer(serializers.ModelSerializer):
+    class Meta:
+        model= Operator
+        fields = ['operator_name']
+
 class CategoryPlanSerializer(serializers.ModelSerializer):
     class Meta :
         model = CategoryPlan
@@ -34,10 +39,12 @@ class CategoryPlanSerializer(serializers.ModelSerializer):
 
 class PlanSerializers(serializers.ModelSerializer):
     plan_type = SerializerMethodField()
+    operator = SerializerMethodField()
     class Meta:
         model = Plan
         fields = (
             "price",
+            "operator",
             'validity',
             "validity_type",
             'data',
@@ -50,6 +57,11 @@ class PlanSerializers(serializers.ModelSerializer):
         data = obj.plan_type.category_name
         category = CategoryPlan.objects.get(category_name = data)
         serializer = CategoryPlanSerializer(category)
+        return serializer.data
+    def get_operator(self,obj):
+        data = obj.operator.operator_name
+        operator = Operator.objects.get(operator_name = data)
+        serializer = OperatorSerializer(operator)
         return serializer.data
 
 
