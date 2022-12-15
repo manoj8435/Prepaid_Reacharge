@@ -61,6 +61,7 @@ class Plan(models.Model):
     DATATYPE_CHOICES = (("MB", "MB"), ("GB", "GB"), ("MB/Day", "MB/Day"), ("GB/Day", "GB/Day"))
     VALIDITY_CHOICES = (("Days","Days"),)
     plan_type = models.ForeignKey(CategoryPlan, on_delete=models.CASCADE, related_name="category_plan_type")
+    operator = models.ForeignKey(Operator,on_delete=models.CASCADE, related_name='operator_based_plan',default="----")
     price = models.PositiveIntegerField(unique=True)
     validity = models.PositiveIntegerField()
     validity_type = models.CharField(max_length=20,choices=VALIDITY_CHOICES)
