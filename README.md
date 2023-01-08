@@ -1,7 +1,7 @@
 # Prepaid-Recharge-API
 Recharge-Application-with user authentication
 
-Admin user :- vinaykushwaha@gloify.com Admin password :- 7879519773
+Admin user :- manojsoni.bhu@gmail.com Admin password :- 7879519773
 
 At first clone this project- Install this module :- pip install virtualenv Then create virtualenv in which directory your project is cloned usig this command :- virtualenv env_name Then activate your virtual env after your dir :- .\env_name\Scripts\activate. Then go to project folder and run this command :- pip install -r requirements.txt.
 
